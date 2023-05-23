@@ -16,6 +16,9 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".MainActivity3_calc"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2_button"
             android:exported="true">
             <intent-filter>

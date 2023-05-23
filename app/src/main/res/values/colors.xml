@@ -5,5 +5,8 @@
     <color name="darkB">#142685</color>
     <color name="cyan">#00BCD4</color>
     <color name="red">#F41E0E</color>
+    <color name="yellow1">#C39713</color>
+    <color name="yellow2">#856402</color>
+    <color name="yellow3">#352904</color>
 
 </resources>

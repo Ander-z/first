@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Include other widget or layout tags here. These are considered
+            "child views" or "children" of the linear layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Number:"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            />
+
+        <EditText
+            android:id="@+id/firstnumber"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="1st Number"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Number:"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            />
+
+        <EditText
+            android:id="@+id/secondnumber"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="2nd Number"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/store1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/store2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/store3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        />
+
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reload"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+
+
+</LinearLayout>
