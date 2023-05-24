@@ -45,6 +45,7 @@ public class MainActivity2_button extends AppCompatActivity {
                 if(a.equals("ander632") && b.equals("00000000")){
                     Intent intent = new Intent(MainActivity2_button.this,MainActivity.class);
                     startActivity(intent);
+                    finish();
                 }
                 else{
                     user.setError("Wrong Credentials");

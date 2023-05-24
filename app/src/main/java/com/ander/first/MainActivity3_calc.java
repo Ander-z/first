@@ -19,7 +19,6 @@ public class MainActivity3_calc extends AppCompatActivity {
 
     String x, y;
 
-    Integer i, o, p, q, w, e;
 
     TextView t1, t2, t3;
 
@@ -56,7 +55,7 @@ public class MainActivity3_calc extends AppCompatActivity {
                     int q = 1 + cCounter ++;
                     int w = q * p;
                     t2.setText("Click Multiplier: " +w);
-                    t3.setText("Nummber of clicks: "+q);
+                    t3.setText("Number of clicks: "+q);
                     }
                 }
 

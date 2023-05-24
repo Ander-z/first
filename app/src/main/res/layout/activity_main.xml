@@ -59,6 +59,8 @@
         android:layout_height="wrap_content"
         android:text="Simple Calculator with Click"
         android:layout_marginTop="25dp"
+        android:background="@drawable/buttoncustom"
+        android:textColor="@color/white"
         />
 
 
