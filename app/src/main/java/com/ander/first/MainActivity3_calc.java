@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity3_calc extends AppCompatActivity {
 
@@ -18,7 +19,6 @@ public class MainActivity3_calc extends AppCompatActivity {
     EditText num1, num2;
 
     String x, y;
-
 
     TextView t1, t2, t3;
 
@@ -47,15 +47,27 @@ public class MainActivity3_calc extends AppCompatActivity {
                     num2.setError("Please enter a number");
                 }
                 else{
-                    int i = Integer.parseInt(x);
-                    int o = Integer.parseInt(y);
-                    int p = i + o;
-                    t1.setText("The sum is: " +p);
+                    String data1 = num1.getText().toString();
+                    String data2 = num2.getText().toString();
 
-                    int q = 1 + cCounter ++;
-                    int w = q * p;
-                    t2.setText("Click Multiplier: " +w);
-                    t3.setText("Number of clicks: "+q);
+                    char c1 = data1.charAt(0);
+                    char c2 = data2.charAt(0);
+
+                    if (((c1 >= 'a' && c1 <= 'z') || (c1 >= 'A' && c1 <= 'Z')) || ((c2 >= 'a' && c2 <= 'z') || (c2 >= 'A' && c2 <= 'Z'))){
+                        Toast.makeText(MainActivity3_calc.this, "Numbers only", Toast.LENGTH_LONG).show();
+                    }
+                    else{
+                        int i = Integer.parseInt(x);
+                        int o = Integer.parseInt(y);
+                        int p = i + o;
+                        t1.setText("The sum is: " +p);
+
+                        int q = 1 + cCounter ++;
+                        int w = q * p;
+                        t2.setText("Click Multiplier: " +w);
+                        t3.setText("Number of clicks: "+q);
+                    }
+
                     }
                 }
 

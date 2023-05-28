@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.setNeutralButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+
                 finish();
             }
         });
