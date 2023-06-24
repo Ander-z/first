@@ -5,7 +5,10 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/ltt2"
+    android:backgroundTint="#807B7B"
+    android:backgroundTintMode="multiply">
 
     <!-- Include other widget or layout tags here. These are considered
             "child views" or "children" of the linear layout -->
@@ -19,6 +22,7 @@
             android:layout_height="wrap_content"
             android:text="First Number:"
             android:textSize="20dp"
+            android:textColor="#D683D6"
             android:layout_margin="5dp"
             />
 
@@ -28,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:hint="1st Number"
+            android:textColorHint="@color/white"
             android:gravity="center"
             />
     </LinearLayout>
@@ -43,6 +48,8 @@
             android:text="Second Number:"
             android:textSize="20dp"
             android:layout_margin="5dp"
+            android:textColor="#D683D6"
+
             />
 
         <EditText
@@ -51,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:hint="2nd Number"
+            android:textColorHint="@color/white"
             android:gravity="center"
             />
     </LinearLayout>

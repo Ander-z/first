@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942325634039",
+    "project_id": "first-5cee5",
+    "storage_bucket": "first-5cee5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942325634039:android:47b190ced9ebdc898394f2",
+        "android_client_info": {
+          "package_name": "com.ander.first"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942325634039-kt6bcbc4rvluhnnhoph2m9ecvu9d7jqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0fsgRfVVwlGf4nF25-mo1a63_-KGbXxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942325634039-kt6bcbc4rvluhnnhoph2m9ecvu9d7jqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

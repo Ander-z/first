@@ -15,7 +15,6 @@ public class MainActivity3_calc extends AppCompatActivity {
     private int cCounter = 0;
 
     Button btn2, btn4;
-
     EditText num1, num2;
 
     String x, y;
@@ -34,6 +33,8 @@ public class MainActivity3_calc extends AppCompatActivity {
         t1 = (TextView) findViewById(R.id.store1);
         t2 = (TextView) findViewById(R.id.store2);
         t3 = (TextView) findViewById(R.id.store3);
+
+
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override

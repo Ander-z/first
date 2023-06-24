@@ -10,10 +10,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn3;
+    Button btn3, sout;
+
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn3 = (Button) findViewById(R.id.iniCalc);
+        sout = (Button) findViewById(R.id.signout);
+        auth = FirebaseAuth.getInstance();
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        sout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                auth.signOut();
+                startActivity(new Intent(MainActivity.this, MainActivity2_button.class));
+                finish();
+            }
+        });
+
     }
 
     @Override
@@ -39,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
 
         alertDialog.setTitle("Alert");
-        alertDialog.setMessage("Are you sure ou want to exit?");
+        alertDialog.setMessage("Are you sure you want to exit?");
         alertDialog.setIcon(R.drawable.baseline_warning_amber_24);
         alertDialog.setCancelable(false);
 
@@ -60,10 +74,6 @@ public class MainActivity extends AppCompatActivity {
 
         AlertDialog alert = alertDialog.create();
         alert.show();
-
-
-
-
 
     }
 }

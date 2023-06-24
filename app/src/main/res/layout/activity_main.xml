@@ -5,13 +5,16 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/ltt2"
+    android:backgroundTint="#4C4B4B"
+    android:backgroundTintMode="multiply">
 
             <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:textColor="@color/darkB"
+            android:textColor="#F481FB"
             android:text="DUMKA ENGINEERING COLLEGE"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -23,6 +26,7 @@
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:layout_margin="5dp"
+                android:textColor="@color/white"
                 android:text="@string/summary"
             />
     <LinearLayout
@@ -58,6 +62,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Simple Calculator with Click"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttoncustom"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN OUT"
         android:layout_marginTop="25dp"
         android:background="@drawable/buttoncustom"
         android:textColor="@color/white"
